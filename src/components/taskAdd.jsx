@@ -11,7 +11,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 const TaskAdding = () => {
   const dispatch = useDispatch();
   const [display, setDisplay] = useState(false);
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date(new Date().getTime()  +86400000));
    const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [task, setTask] = useState({
     name: "",
